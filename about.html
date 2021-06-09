@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Mara Hermeneanu">
+  <meta name="description" content="Discover the best food in every Romanian county">
+  <meta name="keywords" content="food, Romania,restaurants">
+  <title> Romanian Taste | About </title>
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+
+<body>
+  <header id="headerid">
+    <div class="container-head">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+          </svg>
+        </a>
+      </span>
+
+      <div id="branding">
+        <img src="logo.png" alt="poza">
+        <h1> <span class="highlight"> Romanian</span>Taste</h1>
+      </div>
+
+      <nav>
+        <ul class="menu-top">
+          <li ><a href="index.html" data-hover="Home">Home</a></li>
+          <li class="current"><a href="about.html" data-hover="About">About</a></li>
+          <li><a href="contact.html" data-hover="Contact">Contact</a></li>
+        </ul>
+
+        <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Restaurants</a>
+            <div class="dropdown-content">
+              <ol>
+                <li><a href="restaurants.html">Map</a></li>
+                <li><a href="brasov.html">Brasov</a></li>
+                <li><a href="http://localhost:8000/">Bucharest</a></li>
+              </ol>
+            </div>
+          </div>
+          <a id = "ancorarec" href="#">Recipes</a>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <section id="showcase-about">
+    <h2>Discover the best Romanian food.</h2>
+  </section>
+  <div class= "boxesAbout">
+
+ <article class="containerAbout">
+   <div class="card">
+     <div class ="imgBox">
+       <img src = "https://d39l2hkdp2esp1.cloudfront.net/img/photo/146397/146397_00_2x.jpg" alt="couple">
+     </div>
+     <div class = "caption">
+       <h2> Kate & Sam </h2>
+       <p> We're a couple of internationals fascinated about Romanian culture and cuisine, which is why we decided to share our culinary experiences with others food enthusiasts. </p>
+     </div>
+   </div>
+</article>
+
+  <aside>
+    <div class="follow">
+    <h2>Follow us</h2>
+    <p> Never miss a post about the new Romanian food we're trying</p>
+  </div>
+    <div class="wrapperAbout">
+    <div class="button">
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i></div>
+        <span>Facebook</span>
+      </div>
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-instagram"></i></div>
+          <span>Instagram</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-twitter"></i></div>
+            <span>Twitter</span>
+          </div>
+        </div>
+        </aside>
+  </div>
+
+  <footer>
+    <p>Romanian Taste, Proiect Tehnici Web; 2020</p>
+  </footer>
+
+<script src="script-comun.js"></script>
+<script src="script-about.js"></script>
+</body>
+
+
+
+</html>

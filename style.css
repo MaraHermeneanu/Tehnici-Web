@@ -1,0 +1,998 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Questrial&family=Varela+Round&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+    line-height: 1.3;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+/***************HEADER****************/
+
+.highlight {
+    font-family: 'Fredoka One', cursive;
+}
+
+#branding {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background: #c0c0c0;
+    color: #ffffff;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    min-height: 70px;
+    border-bottom: #a83c32 3px solid;
+
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index:1;
+}
+
+
+.container-head img {
+    height: 4.6875rem;
+    width: auto;
+    position: relative;
+    bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.container-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+}
+
+
+header a{
+    text-transform: uppercase;
+}
+
+
+header nav {
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #211b19;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+.menu-top * {
+    transition: all 0.35s ease;
+}
+
+.menu-top li {
+    display: inline-block;
+    margin: 0 1.5em;
+    overflow: hidden;
+}
+
+.menu-top a {
+    padding: 0.3em 0;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-top a:before,
+.menu-top a:after {
+    position: absolute;
+    transition: all 0.35s ease;
+}
+
+.menu-top a:before {
+    top: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #a83c32;
+}
+
+.menu-top a:after {
+    padding: 0.3em 0;
+    top: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: white;
+    white-space: nowrap;
+}
+
+.menu-top li:hover a,
+.menu-top .current a {
+    transform: translateY(-100%);
+}
+
+
+/***************************SHOWCASE*****************************/
+
+#showcase{
+    background-image: url('c3335c18-5a18-4832-86d5-b5ada4a8c7e7.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+
+}
+#showcase h2{
+  color: white;
+  text-shadow: 4px 4px black;
+}
+
+/*******************FOOTER*****************/
+
+footer{
+  margin-top:1.65rem;
+}
+
+footer p {
+    padding: 20px;
+    margin: 0;
+    color: #ffffff;
+    background-color: #786f6f;
+    text-align: center;
+}
+
+/*******************SIDEBAR MENU****************/
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:not(:first-child) {
+    margin-top: 1.25rem;
+}
+
+.side-nav a:hover {
+    color: #a83c32;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 1.875rem;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+div .dropdown{
+  margin-top: 30px;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*Traditional Food* and *Youtube Food */
+
+.trd{
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 10px 10px;
+  font-size: 2rem;
+ }
+ 
+ .highlight2{
+   color: #a83c32;
+   font-family:'Fredoka One', cursive;
+ }
+ 
+
+#description{
+  text-align: justify;
+  padding: 10px 10px;
+  border-bottom: 3px solid #a83c32;
+  margin: 0;
+  font-size: 1.4rem;
+} 
+
+/*****************GALLERY*******************/
+
+
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+  justify-content: center;
+}
+
+.column-gallery {
+  max-width: 30%;
+  padding: 0 8px;
+}
+figure{
+  margin: 0;
+}
+.column-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+figcaption{
+  text-align: justify;
+  padding: 8px 8px;
+  border-style: ridge;
+  transition: color 2s, background 3s ease-in-out;
+}
+
+figcaption:hover{
+  color: white;
+  background-color: black;
+  transition: color 2s, background 3s ease-in-out;
+}
+
+/*********************VIDEO GALLERY********************/
+
+.vgallery {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.vgallery iframe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30rem;
+    padding: 8px 8px;
+    margin: 0;
+    border: 0;
+}
+/***********************************************/
+
+/******************** BRASOV *************************/
+#showcase-brasov{
+  background-image: url('maria-teneva-xnnc3Zka94k-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+
+}
+#showcase-brasov h2{
+  color: white;
+  text-shadow: 4px 4px black;
+
+}
+
+#divbtn{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div #bvbtn{
+  box-sizing: border-box;
+  width: 20%;
+  height: 35%;
+  border-radius: 25px;
+  padding: 1px 1px;
+  background-color: white;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 5px 10px 5px 5px #c0c0c0;
+  border: none;
+  outline:none;
+
+}
+
+#bvbtn:hover{
+  color: #a83c32;
+}
+
+
+#body-bv{
+  background-image: linear-gradient(to right,white, #c0c0c0);
+  height: 100vh;
+  font-family: 'Questrial', sans-serif;
+
+}
+
+#body-bv section a{
+  text-decoration: none;
+  color:black;
+}
+
+.tabel{
+  overflow: scroll;
+}
+
+.tabel table{
+  box-sizing: border-box;
+  margin-top: 3.12rem;
+  padding: 1.8rem 1.25rem;
+  width: 100vw;
+  text-align: center;
+  background-color: #fff;
+  border-spacing: 30px 0;
+}
+
+tr>th{
+  color:#a83c32;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4px;
+  align-items: center;
+}
+
+ .card-bv {
+	 padding: 1.7rem 1.7rem;
+   width: 75%;
+   display: flex;
+   flex-direction: row;
+}
+ .card-bv .wrapper {
+	 min-height: 540px;
+	 position: relative;
+   overflow: hidden;
+   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   margin: 0 30px;
+}
+ .card-bv .wrapper:hover .data {
+   transform: translateY(0);
+}
+ .card-bv .data {
+	 position: absolute;
+	 bottom: 0;
+	 width: 100%;
+	 transform: translateY(calc(70px + 1em));
+   transition: transform 0.3s;
+}
+ .card-bv .data .content {
+	 padding: 1em;
+   position: relative;
+   background-color: #fff;
+   box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+ .card-bv .title {
+	 margin-top: 10px;
+}
+ .card-bv .text {
+	 height: 70px;
+   margin: 0;
+}
+ .img1 {
+
+   background-image: url("restaurante/Prato1.jpg") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.img2 {
+  
+   background-image: url("restaurante/SubTampa1.jpg") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.img3 {
+
+   background-image: url("restaurante/DeiFrati1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.img4 {
+
+   background-image: url("restaurante/LaCeaun1.jpg") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.img5 {
+
+   background-image: url("restaurante/Hirscher1.jpg") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.img6 {
+
+   background-image: url("restaurante/Trattorian1.jpg") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+	 
+ .card .title a {
+	 color: #808080;
+
+}
+
+/***********************************************/
+
+/********************* RESTAURANTS ****************************/
+.theme{
+  float: left;
+  position: sticky;
+  top:0;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  width: 150px;
+
+}
+
+.theme img{
+  width: 4rem;
+  height: auto;
+}
+
+#showcase-map{
+  background-image: url('photo-1561712815-ca8c24faa5b5.jfif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+
+}
+
+#showcase-map h2{
+  color: white;
+  text-shadow: 4px 4px black;
+}
+
+.mapdiv {
+    width: 70%;
+    height: auto;
+    margin: 0 15%;
+    text-align: center;
+}
+
+.mapdiv h2{
+  margin: 0;
+  padding: 10px 40px;
+}
+
+
+.mapdiv path {
+    fill: #dedad9;
+    stroke: white;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+    animation: colorchange 20s linear 1s infinite, dilate 15s linear 2s infinite;
+
+}
+
+@keyframes colorchange{
+     0%   {stroke: grey;}
+     33%  {stroke: green; }
+     66%  {stroke: white;}
+     100% {stroke: grey; }
+  }
+
+@keyframes dilate{
+  0%{stroke-width: 1px;}
+  50%{stroke-width:0.5px;}
+  100%{stroke-width:1px;}
+
+}
+
+.mapdiv path{
+  cursor: url("pin.png"), auto;
+}
+
+/* .mapdiv path:hover {
+    fill: transparent;
+} */
+
+.mapdiv path[id*="Brasov"]:hover{
+  fill: #4f5e35;
+
+}
+/***********************************************/
+
+/******************** ABOUT *************************/
+
+#showcase-about {
+    background-image: url('dorothea-oldani-xukxPNcPgBY-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+#showcase-about h2 {
+    color: white;
+    text-shadow: 4px 4px black;
+}
+
+.containerAbout {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    width: 50%;
+    max-width: 500px;
+}
+
+.containerAbout .card {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px 15px;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.containerAbout .card:hover {
+    height: 600px;
+}
+
+.containerAbout .card .imgBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -60px;
+}
+
+.containerAbout .card .imgBox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.containerAbout .card .caption {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.containerAbout .card:hover .caption {
+    visibility: visible;
+    display: block;
+    color: black;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.boxesAbout {
+    margin: 0;
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 46.7rem;
+}
+
+.follow {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.wrapperAbout {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapperAbout .button {
+    height: 60px;
+    position: relative;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapperAbout .button:hover {
+    width: 200px;
+}
+
+.wrapperAbout .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapperAbout .button:nth-child(1):hover .icon {
+    background: #4267B2;
+}
+
+.wrapperAbout .button:nth-child(2):hover .icon {
+    background: #E1306C;
+}
+
+.wrapperAbout .button:nth-child(3):hover .icon {
+    background: #1DA1F2;
+}
+
+.wrapperAbout .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapperAbout .button:hover .icon i {
+    color: #fff;
+}
+
+.wrapperAbout .button span {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    top: 0px;
+    transform: translateX(57px);
+    display: none;
+}
+
+.wrapperAbout .button:nth-child(1):hover span {
+    display: block;
+}
+
+.wrapperAbout .button:nth-child(2):hover span {
+    display: block;
+}
+
+.wrapperAbout .button:nth-child(3):hover span {
+    display: block;
+}
+
+.wrapperAbout .button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapperAbout .button:nth-child(2) span {
+    color: #E1306C;
+}
+
+.wrapperAbout .button:nth-child(3) span {
+    color: #1DA1F2;
+}
+/***********************************************/
+
+/************************ CONTACT *****************************/
+#showcase-contact{
+  background-image: url('nomadic-julien-_TtMYa9BimI-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+
+}
+#showcase-contact h2{
+  color: white;
+  text-shadow: 4px 4px black;
+}
+
+#formular {
+  text-align: center;
+}
+input[type="text"]:focus{
+  box-shadow: 0 0 5px #786f6f;
+  border: 1px solid #786f6f;
+  margin: none;
+}
+
+input:hover{
+  border-color: #a83c32;
+}
+
+input[type="text"]:first-child{
+  margin-top: 30px;
+}
+
+input:nth-of-type(1){
+  width:  18.75rem;
+  height: 1.875rem;
+
+}
+input:nth-of-type(2){
+  margin-top: 15px;
+  width:  18.75rem;
+  height: 30px;
+
+}
+
+#formular p{
+  margin-bottom: 5px;
+}
+
+input:nth-last-of-type(3){
+  margin-top: 30px;
+  width:  18.75rem;
+  height: 12.5rem;
+  text-align: center;
+}
+
+input[type="submit"]{
+  width: 12.5rem;
+  padding: 1rem 1rem;
+  margin-top: 30px;
+  background: #000;
+  color:#fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/***********************************************/
+
+
+/******************* MEDIA **************************/
+
+@media screen and (min-width: 750px) and (max-width: 1024px){
+  div #bvbtn{
+    box-sizing: border-box;
+    width: 30%;
+    height: 40%;
+    border-radius: 25px;
+    padding: 1px 1px;
+    background-color: white;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+    font-size: 70%;
+    box-shadow: 5px 10px 5px 5px #c0c0c0;
+    border: none;
+    outline:none;
+  
+  }
+
+}
+
+@media screen and (max-width: 749px){
+  div #bvbtn{
+    box-sizing: border-box;
+    width: 40%;
+    height: 40%;
+    border-radius: 25px;
+    padding: 1px 1px;
+    background-color: white;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+    font-size: 60%;
+    box-shadow: 5px 10px 5px 5px #c0c0c0;
+    border: none;
+    outline:none;
+  
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .card-bv{
+   width: 100%;
+   display: grid;
+   box-sizing: border-box;
+ }
+ .card-bv .wrapper{
+   min-height: 350px;
+   width: auto;
+   margin: 30px 30px;
+ }
+
+ .trd{
+   font-size: 1.5rem;
+  
+ }
+ body{
+   font-size: 1rem;
+ }
+
+ #description{
+   font-size: 1.2rem;
+ }
+
+  .vgallery {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .column-gallery {
+    max-width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .mapdiv h2{
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px 40px;
+  }
+
+  .theme img{
+    width: 2rem;
+  }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .column-gallery img{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #showcase h2 {
+        font-size: 3.4375rem;
+        margin: 0;
+        padding: 10.28125rem 0px;
+    }
+    #showcase-about h2 {
+        font-size: 3.4375rem;
+        margin: 0;
+        padding: 10.28125rem 0px;
+    }
+    #showcase-brasov h2 {
+        font-size: 3.4375rem;
+        margin: 0;
+        padding: 10.28125rem 0px;
+    }
+    #showcase-map h2 {
+        font-size: 3.4375rem;
+        margin: 0;
+        padding: 10.28125rem 0px;
+    }
+    #showcase-contact h2 {
+        font-size: 3.4375rem;
+        margin: 0;
+        padding: 10.28125rem 0px;
+    }
+
+}
+
+@media screen and (max-width: 766px) {
+    .boxesAbout {
+        flex-direction: column;
+        height: 62.5rem;
+    }
+    .containerAbout {
+        width: 100%;
+    }
+
+    .follow{
+      padding-top: 0;
+    }
+
+    .wrapperAbout{
+      display: grid;
+      height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    header #branding,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+    }
+    .container-head {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    .menu-top {
+        padding-left: 0px;
+    }
+    section[id*="showcase"]{
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+    }
+    
+    #showcase h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    #showcase-contact h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    #showcase-about h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    #showcase-brasov h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    #showcase-map h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+}
